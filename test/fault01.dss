@@ -1,0 +1,358 @@
+Clear
+New Circuit.REDE basekv=13.8 Bus1=REDE pu= 1  phases=3 R1=0.78 X1=0.88 R0=0.2 X0=0.3
+New linecode.2E70 nphases=2 R1=0.56 X1=0.3 R0=0.97 X0=1.41 C1=0 C0=0 normamps=310 unit=km
+New linecode.E185 nphases=3 R1=0.2112 X1=0.251 R0=0.8767 X0=1.6847 C1=0 C0=0 normamps=575 unit=km
+New linecode.1E70 nphases=1 R1=0.56 X1=0.3 R0=0.97 X0=1.41 C1=0 C0=0 normamps=310 unit=km
+New linecode.A06 nphases=3 R1=2.4298 X1=0.4879 R0=2.5011 X0=2.3224 C1=0 C0=0 normamps=65 unit=km
+New linecode.1E50 nphases=1 R1=0.56 X1=0.3 R0=0.97 X0=1.41 C1=0 C0=0 normamps=266 unit=km
+New Line.trecho9 Bus1=REDE.1.2.3.0 Bus2=barra9.1.2.3.0  phases=3  R1=0.00000001   R0=0.00000001   X1=0.00000001   X0=0.00000001 C1=0 C0=0
+New transformer.TRAFO11tap phases=1 windings=3 xhl=3.5 xht=3.5 xlt=3.5 buses=[barra10.1.0 barra11.1.0 barra11.0.2] conns=[wye wye wye] kvs=[7.96743382493766 0.12 0.12] kvas=[37.5 18.75 18.75]
+New transformer.TRAFO11b phases=1 windings=2 xhl=3.5 buses=[barra10.2.0 barra11.2.3] conns=[wye delta] kvs=[7.96743382493766 0.24] kvas=[37.5 37.5]
+New transformer.TRAFO19tap phases=1 windings=3 xhl=3 xht=3 xlt=3 buses=[barra16.1.0 barra19.1.0 barra19.0.2] conns=[wye wye wye] kvs=[7.96743382493766 0.12 0.12] kvas=[22.5 11.25 11.25]
+New transformer.TRAFO19b phases=1 windings=2 xhl=3 buses=[barra16.2.0 barra19.2.3] conns=[wye delta] kvs=[7.96743382493766 0.24] kvas=[22.5 22.5]
+New transformer.TRAFO20tap phases=1 windings=3 xhl=4 xht=4 xlt=4 buses=[barra13.1.0 barra20.1.0 barra20.0.2] conns=[wye wye wye] kvs=[7.96743382493766 0.12 0.12] kvas=[15 7.5 7.5]
+New transformer.TRAFO20b phases=1 windings=2 xhl=4 buses=[barra13.2.0 barra20.2.3] conns=[wye delta] kvs=[7.96743382493766 0.24] kvas=[15 15]
+New transformer.TRAFO28 phases=1 windings=2 xhl=3 buses=[barra25.1.2  barra28.1.0] conns=[delta wye] kvs=[13.8 0.12] kvas=[45 45]
+New Line.trecho1 Bus1=barra2.1.2.0 Bus2=barra1.1.2.0  phases=2 linecode=2E70 length= 66.6 units=m
+New Line.trecho2 Bus1=barra5.1.2.0 Bus2=barra2.1.2.0  phases=2 linecode=2E70 length= 97.14 units=m
+New Line.trecho3 Bus1=barra4.2.3.0 Bus2=barra3.2.3.0  phases=2 linecode=2E70 length= 154.83 units=m
+New Line.trecho4 Bus1=barra5.2.3.0 Bus2=barra4.2.3.0  phases=2 linecode=2E70 length= 136.61 units=m
+New Line.trecho5 Bus1=barra6.1.2.3.0 Bus2=barra5.1.2.3.0  phases=3 linecode=E185 length= 144.84 units=m
+New Line.trecho6 Bus1=barra11.1.2.3.0 Bus2=barra6.1.2.3.0  phases=3 linecode=E185 length= 39.84 units=m
+New Line.trecho7 Bus1=barra8.1.0 Bus2=barra7.1.0  phases=1 linecode=1E70 length= 31.38 units=m
+New Line.trecho8 Bus1=barra11.1.0 Bus2=barra8.1.0  phases=1 linecode=1E70 length= 141.14 units=m
+New Line.trecho10 Bus1=barra12.1.2.3.0 Bus2=barra10.1.2.3.0  phases=3 linecode=E185 length= 86.82 units=m
+New Line.trecho12 Bus1=barra9.1.2.3.0 Bus2=barra12.1.2.3.0  phases=3 linecode=E185 length= 191.42 units=m
+New Line.trecho13 Bus1=barra12.1.2.3.0 Bus2=barra13.1.2.3.0  phases=3 linecode=E185 length= 182.53 units=m
+New Line.trecho14 Bus1=barra16.1.2.3.0 Bus2=barra14.1.2.3.0  phases=3 linecode=E185 length= 176.21 units=m
+New Line.trecho15 Bus1=barra10.1.2.3.0 Bus2=barra15.1.2.3.0  phases=3 linecode=E185 length= 79.81 units=m
+New Line.trecho16 Bus1=barra13.1.2.3.0 Bus2=barra16.1.2.3.0  phases=3 linecode=E185 length= 242.84 units=m
+New Line.trecho17 Bus1=barra20.1.2.3.0 Bus2=barra17.1.2.3.0  phases=3 linecode=A06 length= 77.07 units=m
+New Line.trecho18 Bus1=barra19.1.2.0 Bus2=barra18.1.2.0  phases=2 linecode=2E70 length= 54.72 units=m
+New Line.trecho21 Bus1=barra19.2.3.0 Bus2=barra21.2.3.0  phases=2 linecode=2E70 length= 66.09 units=m
+New Line.trecho22 Bus1=barra15.1.2.3.0 Bus2=barra22.1.2.3.0  phases=3 linecode=E185 length= 142.67 units=m
+New Line.trecho23 Bus1=barra22.1.2.3.0 Bus2=barra23.1.2.3.0  phases=3 linecode=E185 length= 226.38 units=m
+New Line.trecho24 Bus1=barra23.1.2.3.0 Bus2=barra24.1.2.3.0  phases=3 linecode=E185 length= 313.13 units=m
+New Line.trecho25 Bus1=barra24.1.2.3.0 Bus2=barra25.1.2.3.0  phases=3 linecode=E185 length= 166.41 units=m
+New Line.trecho26 Bus1=barra25.1.2.3.0 Bus2=barra26.1.2.3.0  phases=3 linecode=E185 length= 208.97 units=m
+New Line.trecho27 Bus1=barra28.1.0 Bus2=barra27.1.0  phases=1 linecode=1E50 length= 96.11 units=m
+Set Mode = SnapShot
+Set VoltageBases = [ 0.24 13.8 0.12]
+calcvoltagebases
+solve
+New Fault.shortckt Bus1=barra1.1.2 phases=2
+solve
+Fault.shortckt.Bus1=barra2.1.2  phases=2
+solve
+Fault.shortckt.Bus1=barra3.2.3 phases=2
+solve
+Fault.shortckt.Bus1=barra4.2.3 phases=2
+solve
+Fault.shortckt.Bus1=barra5.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra6.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra7.1 phases=1
+solve
+Fault.shortckt.Bus1=barra8.1 phases=1
+solve
+Fault.shortckt.Bus1=barra9.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra10.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra11.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra12.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra13.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra14.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra15.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra16.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra17.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra18.1.2 phases=2
+solve
+Fault.shortckt.Bus1=barra19.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra20.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra21.2.3 phases=2
+solve
+Fault.shortckt.Bus1=barra22.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra23.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra24.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra25.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra26.1.2.3 phases=3
+solve
+Fault.shortckt.Bus1=barra27.1 phases=1
+solve
+Fault.shortckt.Bus1=barra28.1 phases=1
+solve
+Fault.shortckt.Bus1=barra1.1 bus2= barra1.2 phases=2
+solve
+Fault.shortckt.Bus1=barra2.1 bus2= barra2.2 phases=2
+solve
+Fault.shortckt.Bus1=barra3.2 bus2= barra3.3 phases=2
+solve
+Fault.shortckt.Bus1=barra4.2 bus2= barra4.3 phases=2
+solve
+Fault.shortckt.Bus1=barra5.1 bus2= barra5.2 phases=2
+solve
+Fault.shortckt.Bus1=barra5.2 bus2= barra5.3 phases=2
+solve
+Fault.shortckt.Bus1=barra5.3 bus2= barra5.1 phases=2
+solve
+Fault.shortckt.Bus1=barra6.1 bus2= barra6.2 phases=2
+solve
+Fault.shortckt.Bus1=barra6.2 bus2= barra6.3 phases=2
+solve
+Fault.shortckt.Bus1=barra6.3 bus2= barra6.1 phases=2
+solve
+Fault.shortckt.Bus1=barra9.1 bus2= barra9.2 phases=2
+solve
+Fault.shortckt.Bus1=barra9.2 bus2= barra9.3 phases=2
+solve
+Fault.shortckt.Bus1=barra9.3 bus2= barra9.1 phases=2
+solve
+Fault.shortckt.Bus1=barra10.1 bus2= barra10.2 phases=2
+solve
+Fault.shortckt.Bus1=barra10.2 bus2= barra10.3 phases=2
+solve
+Fault.shortckt.Bus1=barra10.3 bus2= barra10.1 phases=2
+solve
+Fault.shortckt.Bus1=barra11.1 bus2= barra11.2 phases=2
+solve
+Fault.shortckt.Bus1=barra11.2 bus2= barra11.3 phases=2
+solve
+Fault.shortckt.Bus1=barra11.3 bus2= barra11.1 phases=2
+solve
+Fault.shortckt.Bus1=barra12.1 bus2= barra12.2 phases=2
+solve
+Fault.shortckt.Bus1=barra12.2 bus2= barra12.3 phases=2
+solve
+Fault.shortckt.Bus1=barra12.3 bus2= barra12.1 phases=2
+solve
+Fault.shortckt.Bus1=barra13.1 bus2= barra13.2 phases=2
+solve
+Fault.shortckt.Bus1=barra13.2 bus2= barra13.3 phases=2
+solve
+Fault.shortckt.Bus1=barra13.3 bus2= barra13.1 phases=2
+solve
+Fault.shortckt.Bus1=barra14.1 bus2= barra14.2 phases=2
+solve
+Fault.shortckt.Bus1=barra14.2 bus2= barra14.3 phases=2
+solve
+Fault.shortckt.Bus1=barra14.3 bus2= barra14.1 phases=2
+solve
+Fault.shortckt.Bus1=barra15.1 bus2= barra15.2 phases=2
+solve
+Fault.shortckt.Bus1=barra15.2 bus2= barra15.3 phases=2
+solve
+Fault.shortckt.Bus1=barra15.3 bus2= barra15.1 phases=2
+solve
+Fault.shortckt.Bus1=barra16.1 bus2= barra16.2 phases=2
+solve
+Fault.shortckt.Bus1=barra16.2 bus2= barra16.3 phases=2
+solve
+Fault.shortckt.Bus1=barra16.3 bus2= barra16.1 phases=2
+solve
+Fault.shortckt.Bus1=barra17.1 bus2= barra17.2 phases=2
+solve
+Fault.shortckt.Bus1=barra17.2 bus2= barra17.3 phases=2
+solve
+Fault.shortckt.Bus1=barra17.3 bus2= barra17.1 phases=2
+solve
+Fault.shortckt.Bus1=barra18.1 bus2= barra18.2 phases=2
+solve
+Fault.shortckt.Bus1=barra19.1 bus2= barra19.2 phases=2
+solve
+Fault.shortckt.Bus1=barra19.2 bus2= barra19.3 phases=2
+solve
+Fault.shortckt.Bus1=barra19.3 bus2= barra19.1 phases=2
+solve
+Fault.shortckt.Bus1=barra20.1 bus2= barra20.2 phases=2
+solve
+Fault.shortckt.Bus1=barra20.2 bus2= barra20.3 phases=2
+solve
+Fault.shortckt.Bus1=barra20.3 bus2= barra20.1 phases=2
+solve
+Fault.shortckt.Bus1=barra21.2 bus2= barra21.3 phases=2
+solve
+Fault.shortckt.Bus1=barra22.1 bus2= barra22.2 phases=2
+solve
+Fault.shortckt.Bus1=barra22.2 bus2= barra22.3 phases=2
+solve
+Fault.shortckt.Bus1=barra22.3 bus2= barra22.1 phases=2
+solve
+Fault.shortckt.Bus1=barra23.1 bus2= barra23.2 phases=2
+solve
+Fault.shortckt.Bus1=barra23.2 bus2= barra23.3 phases=2
+solve
+Fault.shortckt.Bus1=barra23.3 bus2= barra23.1 phases=2
+solve
+Fault.shortckt.Bus1=barra24.1 bus2= barra24.2 phases=2
+solve
+Fault.shortckt.Bus1=barra24.2 bus2= barra24.3 phases=2
+solve
+Fault.shortckt.Bus1=barra24.3 bus2= barra24.1 phases=2
+solve
+Fault.shortckt.Bus1=barra25.1 bus2= barra25.2 phases=2
+solve
+Fault.shortckt.Bus1=barra25.2 bus2= barra25.3 phases=2
+solve
+Fault.shortckt.Bus1=barra25.3 bus2= barra25.1 phases=2
+solve
+Fault.shortckt.Bus1=barra26.1 bus2= barra26.2 phases=2
+solve
+Fault.shortckt.Bus1=barra26.2 bus2= barra26.3 phases=2
+solve
+Fault.shortckt.Bus1=barra26.3 bus2= barra26.1 phases=2
+solve
+Fault.shortckt.Bus1=barra1.1 phases=1
+solve
+Fault.shortckt.Bus1=barra1.2 phases=1
+solve
+Fault.shortckt.Bus1=barra2.1 phases=1
+solve
+Fault.shortckt.Bus1=barra2.2 phases=1
+solve
+Fault.shortckt.Bus1=barra3.2 phases=1
+solve
+Fault.shortckt.Bus1=barra3.3 phases=1
+solve
+Fault.shortckt.Bus1=barra4.2 phases=1
+solve
+Fault.shortckt.Bus1=barra4.3 phases=1
+solve
+Fault.shortckt.Bus1=barra5.1 phases=1
+solve
+Fault.shortckt.Bus1=barra5.2 phases=1
+solve
+Fault.shortckt.Bus1=barra5.3 phases=1
+solve
+Fault.shortckt.Bus1=barra6.1 phases=1
+solve
+Fault.shortckt.Bus1=barra6.2 phases=1
+solve
+Fault.shortckt.Bus1=barra6.3 phases=1
+solve
+Fault.shortckt.Bus1=barra7.1 phases=1
+solve
+Fault.shortckt.Bus1=barra8.1 phases=1
+solve
+Fault.shortckt.Bus1=barra9.1 phases=1
+solve
+Fault.shortckt.Bus1=barra9.2 phases=1
+solve
+Fault.shortckt.Bus1=barra9.3 phases=1
+solve
+Fault.shortckt.Bus1=barra10.1 phases=1
+solve
+Fault.shortckt.Bus1=barra10.2 phases=1
+solve
+Fault.shortckt.Bus1=barra10.3 phases=1
+solve
+Fault.shortckt.Bus1=barra11.1 phases=1
+solve
+Fault.shortckt.Bus1=barra11.2 phases=1
+solve
+Fault.shortckt.Bus1=barra11.3 phases=1
+solve
+Fault.shortckt.Bus1=barra12.1 phases=1
+solve
+Fault.shortckt.Bus1=barra12.2 phases=1
+solve
+Fault.shortckt.Bus1=barra12.3 phases=1
+solve
+Fault.shortckt.Bus1=barra13.1 phases=1
+solve
+Fault.shortckt.Bus1=barra13.2 phases=1
+solve
+Fault.shortckt.Bus1=barra13.3 phases=1
+solve
+Fault.shortckt.Bus1=barra14.1 phases=1
+solve
+Fault.shortckt.Bus1=barra14.2 phases=1
+solve
+Fault.shortckt.Bus1=barra14.3 phases=1
+solve
+Fault.shortckt.Bus1=barra15.1 phases=1
+solve
+Fault.shortckt.Bus1=barra15.2 phases=1
+solve
+Fault.shortckt.Bus1=barra15.3 phases=1
+solve
+Fault.shortckt.Bus1=barra16.1 phases=1
+solve
+Fault.shortckt.Bus1=barra16.2 phases=1
+solve
+Fault.shortckt.Bus1=barra16.3 phases=1
+solve
+Fault.shortckt.Bus1=barra17.1 phases=1
+solve
+Fault.shortckt.Bus1=barra17.2 phases=1
+solve
+Fault.shortckt.Bus1=barra17.3 phases=1
+solve
+Fault.shortckt.Bus1=barra18.1 phases=1
+solve
+Fault.shortckt.Bus1=barra18.2 phases=1
+solve
+Fault.shortckt.Bus1=barra19.1 phases=1
+solve
+Fault.shortckt.Bus1=barra19.2 phases=1
+solve
+Fault.shortckt.Bus1=barra19.3 phases=1
+solve
+Fault.shortckt.Bus1=barra20.1 phases=1
+solve
+Fault.shortckt.Bus1=barra20.2 phases=1
+solve
+Fault.shortckt.Bus1=barra20.3 phases=1
+solve
+Fault.shortckt.Bus1=barra21.2 phases=1
+solve
+Fault.shortckt.Bus1=barra21.3 phases=1
+solve
+Fault.shortckt.Bus1=barra22.1 phases=1
+solve
+Fault.shortckt.Bus1=barra22.2 phases=1
+solve
+Fault.shortckt.Bus1=barra22.3 phases=1
+solve
+Fault.shortckt.Bus1=barra23.1 phases=1
+solve
+Fault.shortckt.Bus1=barra23.2 phases=1
+solve
+Fault.shortckt.Bus1=barra23.3 phases=1
+solve
+Fault.shortckt.Bus1=barra24.1 phases=1
+solve
+Fault.shortckt.Bus1=barra24.2 phases=1
+solve
+Fault.shortckt.Bus1=barra24.3 phases=1
+solve
+Fault.shortckt.Bus1=barra25.1 phases=1
+solve
+Fault.shortckt.Bus1=barra25.2 phases=1
+solve
+Fault.shortckt.Bus1=barra25.3 phases=1
+solve
+Fault.shortckt.Bus1=barra26.1 phases=1
+solve
+Fault.shortckt.Bus1=barra26.2 phases=1
+solve
+Fault.shortckt.Bus1=barra26.3 phases=1
+solve
+Fault.shortckt.Bus1=barra27.1 phases=1
+solve
+Fault.shortckt.Bus1=barra28.1 phases=1
+solve

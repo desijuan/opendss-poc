@@ -1,0 +1,95 @@
+clear
+New Circuit.CIRCUIT baseKv=13.8 Bus1=P-barra3 pu=1.0 phases=3 R1=1.0E-5 X1=1.0E-5 R0=1.0E-5 X0=1.0E-5
+Set Mode = SnapShot
+New "LineCode.2-@4 AL-1-@4 AL-TPX" nphases=2 R1=0.51 X1=0.0 R0=2.04 X0=0.0 C1=0 C0=0 normamps=138.0 unit=kft
+New "LineCode.2-@2 CU-1-@6 CU-OW" nphases=2 R1=0.189 X1=0.0 R0=0.756 X0=0.0 C1=0 C0=0 normamps=222.0 unit=kft
+New "LineCode.2-@2 AL-1-@2 AL-TPX" nphases=2 R1=0.319 X1=0.0 R0=1.276 X0=0.0 C1=0 C0=0 normamps=185.0 unit=kft
+New "LineCode.2-1/0 AL-1-1/0 AL-TPX" nphases=2 R1=0.204 X1=0.0 R0=0.816 X0=0.0 C1=0 C0=0 normamps=247.0 unit=kft
+New "LineCode.2-@2 CU-1-@2 CU-OW" nphases=2 R1=0.189 X1=0.0 R0=0.756 X0=0.0 C1=0 C0=0 normamps=222.0 unit=kft
+New transformer.TRAFO-PN_PPT-1-tap@37640 phases=1 windings=3 xhl=2.0 xht=2.0 xlt=2.0 buses=[P-barra3.1.0 S-barra3.1.0 S-barra3.0.2] conns=[wye wye wye] kvs=[7.967433714816837 0.12 0.12] kvas=[37.5 18.75 18.75]
+New Line.@1489510 Bus1=S-barra1.1.2.0 Bus2=S-barra2.1.2.0 phases=2 linecode="2-@4 AL-1-@4 AL-TPX" length=88.42093949605712 units=ft
+New Line.@1489511 Bus1=S-barra3.1.2.0 Bus2=S-barra1.1.2.0 phases=2 linecode="2-@2 CU-1-@6 CU-OW" length=125.60666367690503 units=ft
+New Line.@1489514 Bus1=S-barra3.1.2.0 Bus2=S-barra4.1.2.0 phases=2 linecode="2-@2 AL-1-@2 AL-TPX" length=56.00413326556662 units=ft
+New Line.@1489515 Bus1=S-barra3.1.2.0 Bus2=S-barra5.1.2.0 phases=2 linecode="2-@4 AL-1-@4 AL-TPX" length=80.58950638059373 units=ft
+New Line.@1494202 Bus1=S-barra1.1.2.0 Bus2=S-barra6.1.2.0 phases=2 linecode="2-@2 CU-1-@6 CU-OW" length=27.503910042900188 units=ft
+New Line.@1489516 Bus1=S-barra3.1.2.0 Bus2=S-barra7.1.2.0 phases=2 linecode="2-1/0 AL-1-1/0 AL-TPX" length=72.99756907113171 units=ft
+New Line.@1494201 Bus1=S-barra3.1.2.0 Bus2=S-barra8.1.2.0 phases=2 linecode="2-@2 CU-1-@2 CU-OW" length=120.79357708124199 units=ft
+solve
+New Fault.SHORT_CIRCUIT Bus1=p-barra3.1 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=p-barra3.2 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=p-barra3.3 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=p-barra3.1 Bus2=p-barra3.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=p-barra3.1 Bus2=p-barra3.3 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=p-barra3.2 Bus2=p-barra3.3 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=p-barra3.1.2.3 phases=3
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra3.1 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra3.2 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra3.1 Bus2=s-barra3.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra3.1.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra1.1 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra1.2 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra1.1 Bus2=s-barra1.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra1.1.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra2.1 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra2.2 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra2.1 Bus2=s-barra2.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra2.1.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra4.1 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra4.2 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra4.1 Bus2=s-barra4.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra4.1.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra5.1 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra5.2 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra5.1 Bus2=s-barra5.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra5.1.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra6.1 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra6.2 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra6.1 Bus2=s-barra6.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra6.1.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra7.1 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra7.2 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra7.1 Bus2=s-barra7.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra7.1.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra8.1 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra8.2 phases=1
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra8.1 Bus2=s-barra8.2 phases=2
+solve
+Fault.SHORT_CIRCUIT.Bus1=s-barra8.1.2 phases=2
+solve
