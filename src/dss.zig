@@ -35,7 +35,7 @@ fn Engine(comptime T: type) type {
             const stdout = std.io.getStdOut().writer();
             const stderr = std.io.getStdErr().writer();
 
-            try stdout.print("Starting Base Calculation...\n", .{});
+            try stdout.print("Starting Base Load Flow Calculation...\n", .{});
 
             if (c.DSS_Start(0) == 0) {
                 try stderr.print("{s}\n", .{"Error initializing DSS"});
@@ -75,6 +75,8 @@ fn Engine(comptime T: type) type {
 
             try self.writeBaseResults(&grp);
 
+            c.DSS_DisposeGRData();
+
             try stdout.print("SUCCESS\n", .{});
         }
 
@@ -88,7 +90,7 @@ fn Engine(comptime T: type) type {
             var buffered_reader = std.io.bufferedReader(input_file.reader());
             const input = buffered_reader.reader();
 
-            try stdout.print("Starting Fault Calculation...\n", .{});
+            try stdout.print("Starting Short Circuit Calculation...\n", .{});
 
             if (c.DSS_Start(0) == 0) {
                 try stderr.print("{s}\n", .{"Error initializing DSS"});
@@ -164,6 +166,8 @@ fn Engine(comptime T: type) type {
                 },
                 else => return err,
             }
+
+            c.DSS_DisposeGRData();
 
             try stdout.print("SUCCESS\n", .{});
         }
